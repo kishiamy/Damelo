@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '3.1.2'
 gem 'spree'
 gem 'spree_i18n' , :git => 'https://github.com/spree/spree_i18n.git'
+gem "multi_currencies", :git => "git://github.com/pronix/spree-multi-currency.git"
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 

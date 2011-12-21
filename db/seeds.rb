@@ -1,11 +1,2 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
-
-
-SpreeCore::Engine.load_seed if defined?(SpreeCore)
-SpreeAuth::Engine.load_seed if defined?(SpreeAuth)
+# Use this file to load your own seed data from extensions.  
+# See the db/seeds.rb file in the Spree core for some ideas on what you can do here.

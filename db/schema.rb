@@ -119,6 +119,25 @@ ActiveRecord::Schema.define(:version => 20111202202931) do
     t.string   "gateway_payment_profile_id"
   end
 
+  create_table "currencies", :force => true do |t|
+    t.string   "num_code",                      :null => false
+    t.string   "char_code",                     :null => false
+    t.string   "name",                          :null => false
+    t.boolean  "basic",      :default => false
+    t.string   "locale"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "currency_converters", :force => true do |t|
+    t.integer  "currency_id",                  :null => false
+    t.datetime "date_req",                     :null => false
+    t.float    "nominal",     :default => 1.0, :null => false
+    t.float    "value",                        :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "gateways", :force => true do |t|
     t.string   "type"
     t.string   "name"
